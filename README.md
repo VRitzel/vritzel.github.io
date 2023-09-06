@@ -1,3 +1,3 @@
 Link para acesso ao portfólio:
 
-https://VRitzel.github.io
+https://vritzel.github.io
