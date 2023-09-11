@@ -1,0 +1,73 @@
+
+/*  */
+
+.start{
+  display: flex;  
+  /* height: 100vh; */
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.start__image{
+  align-self: center;
+  width: 38%;
+  /* height: auto; */
+}
+
+.start__container{
+  display: flex;
+  flex: column;
+  justify-content: center;
+  /* gap: 10%; */
+}
+
+.start__text{
+  display: flex;
+  /* width: 70%; */
+  flex-direction: column; 
+  margin-left: 10%;
+  margin-right: 10%;
+  /* margin: auto; */
+  align-items: flex-start;
+  justify-content: center;
+  /* gap: 10px; */
+}
+
+.start__intro{
+  font-size: clamp(1vmax, 2vmax, 2vmax);
+  margin-bottom: 1.5%;
+}
+
+.start__title{
+  font-size: clamp(1vmax, 3vmax, 3vmax);;
+  margin-bottom: 1.5%;
+}
+
+.start__description{
+  font-size: clamp(2vmin, 2.5vmin, 2.5vmin);
+}
+
+.start__button{
+  margin: 5vh 0;
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+
+  .start{
+    margin-bottom: 0;
+  }
+
+  .start__description{
+    font-size: clamp(1vmax, 1.8vmax, 2vmax);
+  }
+  .start__container{
+    flex-direction: column; /* Reverte a ordem dos itens no contêiner */
+    align-items: center;
+    /* margin: auto 0; */
+    width: 100%;
+  }
+  .start__image{
+      width: 100%;
+  }
+
+}

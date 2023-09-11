@@ -1,0 +1,48 @@
+.carousel-inner{
+    display: flex;
+    height: 70%;
+    width: 70%;
+    margin: 0 auto;
+    /* justify-content: center; */
+    background-color: blue;
+}
+
+.carousel-control-prev{
+    width: 7%;
+    height: 20%;
+    border-radius: 50%;
+    margin: auto auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-control-prev:hover{
+    background-color: var(--yellow);
+}
+
+.carousel-control-next{
+    width: 7%;
+    height: 20%;
+    border-radius: 50%;
+    margin: auto auto;
+    transition: all 0.5s ease-out;
+}
+
+.carousel-control-next:hover{
+    background-color: var(--yellow);
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+
+    .carousel-inner{
+        height: 100%;
+        width: 100%;
+    }
+    .carousel-control-prev{
+        width: 10%;
+        height: 20%;
+    }
+    .carousel-control-next{
+        width: 10%;
+        height: 20%;
+    }
+}

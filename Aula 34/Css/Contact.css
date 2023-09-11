@@ -1,0 +1,154 @@
+/*  */
+
+.contact__content{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact__list{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact__aux{
+    display: flex;
+    gap: 1%;
+}
+
+.contact__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    font-size: clamp(1vmax, 2vmax, 2vmax);
+    padding: 2%;
+}
+
+.contact__icon:hover a{
+    cursor: pointer;
+}
+
+.contact__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__input{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vh;
+    margin-bottom: 2%;
+    color: white;
+    background-color: var(--dark-gray-alternative);
+    border-radius: 8px;
+    border: solid 1px var(--light-gray-alternative);
+    width: 100%;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact__button{
+    display: flex;
+    width: fit-content;
+}
+
+.contact__buttons{
+    display: flex;
+    width: 50%;
+    height: 10%;
+    justify-content: space-between;
+}
+
+.contact__social-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.social-media{
+    font-size: clamp(0.7vmax, 1vh, 1vmax);
+}
+
+.icon-background{
+    color: var(--dark-gray);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+.social-media:hover .icon-background{
+    color: var(--yellow);
+    transition: all 0.5s ease-in-out;
+}
+
+.social-media:hover .icon-color{
+    color: var(--dark-gray);
+}
+
+.contact__snack{
+    display: none;
+    background-color: var(--yellow);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1%;
+    /* position: fixed; */
+    z-index: 2;
+    /* bottom: 1.83vw; */
+    color: black;
+    margin-top: 1%;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+
+    .contact__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 10%;
+    }
+
+    .contact__info{
+        align-self: center;
+        font-size: clamp(1vmax, 2vmax, 2vmax);
+    }
+
+    .contact__icon{
+        padding: 5%;
+    }
+
+    .contact__form{
+        width: 100%;
+    }
+
+    .contact__button{
+        margin-bottom: 5%;
+    }
+
+    .contact__buttons{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact__social-list{
+        justify-content: center;
+    }
+
+    .social-media{
+        height: 100%;
+    }
+
+}

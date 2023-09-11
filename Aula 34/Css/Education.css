@@ -1,0 +1,41 @@
+/*  */
+
+.education{
+    margin-bottom: 2%;
+}
+
+.education__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    margin-top: 6vmin;
+}
+
+.education__title{
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-gray);
+    color: var(--yellow);
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+}
+
+.education__item{
+    margin: 10% 0;
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+
+    .education{
+        margin-bottom: 30%;
+    }
+
+    .education__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education__item{
+        margin: 6% 0;
+    }
+}

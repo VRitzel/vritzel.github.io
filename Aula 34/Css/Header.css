@@ -1,0 +1,98 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    justify-content: flex-end;
+    padding-right: 5%;
+    align-items: center;
+    z-index: 2;
+    /* top: 2.5%; */
+    /* left: 80%; */
+}
+
+.header__background{
+    background-color: red;
+}
+
+.header__list{
+    display: none;
+    gap: 10px;
+}
+
+.header__hamburguer{
+    color: white;
+    cursor: pointer;
+    font-size: clamp(1vmax, 2vmax, 2vmax);
+    transition: all 0.5s ease-out;
+}
+
+.header__hamburguer-active{
+    rotate: 90deg;
+    transition: all 0.5s ease-out;
+}
+
+.header__content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* background-color: white;
+    position: fixed;
+    /* display: flex;
+    justify-content: center; */
+}
+
+header-content__button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__button{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: var(--dark-gray-alternative);
+    color: white;
+    border-radius: 100px;
+    padding: 2vh;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.header__button-on{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.header__button:hover{
+    border-radius: 16px;
+    background-color: var(--yellow);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.header__button-text{
+    z-index: 1;
+    display: none;
+    /* animation: moveToRight 2s ease-in-out; */
+}
+
+.header__button:hover .header__button-text{
+    display: inline-block;
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    .header{
+        flex-direction: column;
+        /* width: 10vw; */
+        align-items: flex-end;
+        justify-content: center;
+        /* height: 10vh; */
+    }
+}
